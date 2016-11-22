@@ -1,0 +1,25 @@
+TEST FOR REGISTRATION FLOW:
+
+1.Tools used:
+
+Selenium Webdriver, TestNG, Java, Maven
+
+
+2.Design patterns used:
+
+*Page Object Model Design Pattern
+	I have used page object design pattern for the registration flow project. Within your web UI there are areas that your tests interact with. A Page Object simply models these as objects within the test code. This reduces the amount of duplicated code and means that if the UI changes, the fix need only be applied in one place.
+
+*Factory Design pattern
+	The factory design pattern is for the browsers.
+
+3.Project Flow:
+	All the locators are placed in an interface and in the ApacheSignUpPage the locators are used to find the web elements and the actions are performed for the testing of registration flow are defined in the method registrationFlow. Then in the ApacheSignUpPageTest an object for the ApacheSignUpPage is created and the method is called. To perform the test right click the testng.xml file to Run As -> TestNG Suite. Finally you can view the test results and to see what are all the test failed and passed and the reasons for the failure.
+
+
+Improvements I would have made:
+
+
+* I would have created an Excel file and saved all the data in there and used it for testing the registration flow and the consecutive pages if it had many pages to test and a lot of test data to enter.
+
+

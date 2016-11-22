@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browser" value="ff"/>
+  <test name="Test(failed)">
+    <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="test.java.test.ApacheSignUpPageTest">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="registrationWithCorrectDetails"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- test.java.test.ApacheSignUpPageTest -->
+      <class name="test.java.test.ApacheSignUpPageTestSpanish">
+        <methods>
+          <include name="browserSetup"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- test.java.test.ApacheSignUpPageTestSpanish -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
